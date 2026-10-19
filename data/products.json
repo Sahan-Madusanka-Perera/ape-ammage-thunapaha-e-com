@@ -1,0 +1,39 @@
+{
+  "source": "reference/price-list-2026-10.png (official price list, Oct 2026)",
+  "currency": "LKR",
+  "sizes": ["50g", "100g", "250g", "500g", "1kg"],
+  "categories": [
+    { "slug": "curry-powders", "name_en": "Curry Powders", "name_si": "තුනපහ" },
+    { "slug": "chilli", "name_en": "Chilli", "name_si": "මිරිස්" },
+    { "slug": "ground-spices", "name_en": "Ground Spices", "name_si": "කුඩු වර්ග" },
+    { "slug": "whole-spices", "name_en": "Whole Spices & Seeds", "name_si": "ඇට වර්ග" },
+    { "slug": "specialty", "name_en": "Specialty", "name_si": "විශේෂ" }
+  ],
+  "products": [
+    { "slug": "roasted-curry-powder", "name_si": "බැදපු තුනපහ කුඩු", "name_en": "Roasted Curry Powder", "category": "curry-powders", "prices": { "50g": 150, "100g": 300, "250g": 750, "500g": 1450, "1kg": 2850 } },
+    { "slug": "raw-curry-powder", "name_si": "අමු තුනපහ කුඩු", "name_en": "Raw (Unroasted) Curry Powder", "category": "curry-powders", "prices": { "50g": 120, "100g": 240, "250g": 600, "500g": 1150, "1kg": 2250 } },
+    { "slug": "meat-curry-powder", "name_si": "මස්කරි තුනපහ", "name_en": "Meat Curry Powder", "category": "curry-powders", "prices": { "50g": 280, "100g": 550, "250g": 1400, "500g": 2750, "1kg": 5500 } },
+    { "slug": "black-curry-powder", "name_si": "කළු කුඩු", "name_en": "Black Curry Powder (Kalu Kudu)", "category": "curry-powders", "prices": { "50g": 270, "100g": 540, "250g": 1350, "500g": 2650, "1kg": 5250 } },
+
+    { "slug": "chilli-pieces", "name_si": "කැලි මිරිස්", "name_en": "Chilli Pieces", "category": "chilli", "prices": { "50g": 120, "100g": 240, "250g": 600, "500g": 1150, "1kg": 2250 } },
+    { "slug": "chilli-powder", "name_si": "මිරිස් කුඩු", "name_en": "Chilli Powder", "category": "chilli", "prices": { "50g": 120, "100g": 240, "250g": 600, "500g": 1150, "1kg": 2250 } },
+    { "slug": "roasted-chilli-powder", "name_si": "බැදපු කුඩු මිරිස්", "name_en": "Roasted Chilli Powder", "category": "chilli", "prices": { "50g": 140, "100g": 280, "250g": 700, "500g": 1350, "1kg": 2650 } },
+
+    { "slug": "turmeric-powder", "name_si": "කහ කුඩු", "name_en": "Turmeric Powder", "category": "ground-spices", "prices": { "50g": 300, "100g": 600, "250g": 1500, "500g": 2950, "1kg": 5850 } },
+    { "slug": "black-pepper-powder", "name_si": "ගම්මිරිස්", "name_en": "Black Pepper Powder", "category": "ground-spices", "prices": { "50g": 250, "100g": 500, "250g": 1250, "500g": 2450, "1kg": 4850 } },
+    { "slug": "mustard-powder", "name_si": "අබ කුඩු", "name_en": "Mustard Powder", "category": "ground-spices", "prices": { "50g": 120, "100g": 240, "250g": 600, "500g": 1150, "1kg": 2250 } },
+
+    { "slug": "roasted-fenugreek", "name_si": "බැදපු උළුහාල්", "name_en": "Roasted Fenugreek", "category": "whole-spices", "prices": { "50g": 120, "100g": 240, "250g": 600, "500g": 1150, "1kg": 2250 } },
+    { "slug": "mustard-seeds", "name_si": "අබ ඇට", "name_en": "Mustard Seeds", "category": "whole-spices", "prices": { "50g": 110, "100g": 220, "250g": 550, "500g": 1050, "1kg": 2050 } },
+    { "slug": "cinnamon-quills", "name_si": "කුරුඳු පොතු", "name_en": "Cinnamon Quills", "category": "whole-spices", "prices": { "50g": 400, "100g": 800, "250g": 2000, "500g": 4000, "1kg": 8000 } },
+    { "slug": "black-peppercorns", "name_si": "ගම්මිරිස් ඇට", "name_en": "Black Peppercorns", "category": "whole-spices", "prices": { "50g": 200, "100g": 400, "250g": 1000, "500g": 1950, "1kg": 3850 } },
+    { "slug": "cumin-seeds", "name_si": "සුදුරු ඇට", "name_en": "Cumin Seeds", "category": "whole-spices", "prices": { "50g": 100, "100g": 200, "250g": 500, "500g": 950, "1kg": 1850 } },
+    { "slug": "fennel-seeds", "name_si": "මහදුරු ඇට", "name_en": "Fennel Seeds", "category": "whole-spices", "prices": { "50g": 80, "100g": 160, "250g": 400, "500g": 750, "1kg": 1450 } },
+    { "slug": "coriander-seeds", "name_si": "කොත්තමල්ලි ඇට", "name_en": "Coriander Seeds", "category": "whole-spices", "prices": { "50g": 60, "100g": 120, "250g": 300, "500g": 550, "1kg": 1050 } },
+    { "slug": "cardamom", "name_si": "එනසාල්", "name_en": "Cardamom", "category": "whole-spices", "prices": { "20g": 350 } },
+    { "slug": "cloves", "name_si": "කරාබුනැටි", "name_en": "Cloves", "category": "whole-spices", "prices": { "20g": 350 } },
+
+    { "slug": "goraka", "name_si": "ගොරකා", "name_en": "Goraka (Garcinia)", "category": "specialty", "prices": { "50g": 130, "100g": 260, "250g": 650, "500g": 1250, "1kg": 2450 } },
+    { "slug": "coriander-drink", "name_si": "කොත්තමල්ලි පානය", "name_en": "Coriander Drink Mix", "category": "specialty", "prices": { "50g": 270, "100g": 540, "250g": 1350, "500g": 2650, "1kg": 5250 } }
+  ]
+}

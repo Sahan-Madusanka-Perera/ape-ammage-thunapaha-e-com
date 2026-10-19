@@ -1,0 +1,436 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-15T12:47:42.614306+00:00",
+  "title": "Design System: Ape Ammage Thunapaha",
+  "extensions": {
+    "colorMeta": {
+      "vermilion": {
+        "role": "primary",
+        "displayName": "Temple Vermilion",
+        "canonical": "#a3291b",
+        "tonalRamp": [
+          "#42110b",
+          "#721d13",
+          "#a2291b",
+          "#d23523",
+          "#e25f50",
+          "#eb8f84",
+          "#f3bfb9",
+          "#fbebe9"
+        ]
+      },
+      "vermilion-deep": {
+        "role": "primary",
+        "displayName": "Deep Vermilion",
+        "canonical": "#7a1d12",
+        "tonalRamp": [
+          "#43100a",
+          "#741b11",
+          "#a42718",
+          "#d5331f",
+          "#e55d4d",
+          "#ed8e83",
+          "#f5beb8",
+          "#fcebe9"
+        ]
+      },
+      "vermilion-bright": {
+        "role": "primary",
+        "displayName": "Lit Vermilion",
+        "canonical": "#c03a21",
+        "tonalRamp": [
+          "#41140b",
+          "#712213",
+          "#a1311c",
+          "#d13f24",
+          "#e16851",
+          "#ea9585",
+          "#f3c2b9",
+          "#fbece9"
+        ]
+      },
+      "ochre": {
+        "role": "secondary",
+        "displayName": "Yellow Ochre",
+        "canonical": "#d9a21b",
+        "tonalRamp": [
+          "#443308",
+          "#76580f",
+          "#a87d15",
+          "#daa31b",
+          "#e8ba4a",
+          "#efcf80",
+          "#f6e4b6",
+          "#fcf6e8"
+        ]
+      },
+      "ochre-deep": {
+        "role": "secondary",
+        "displayName": "Burnt Ochre",
+        "canonical": "#9a6d0b",
+        "tonalRamp": [
+          "#473305",
+          "#7c5809",
+          "#b07d0d",
+          "#e4a210",
+          "#f1ba41",
+          "#f5cf7a",
+          "#fae3b3",
+          "#fdf6e7"
+        ]
+      },
+      "ochre-pale": {
+        "role": "secondary",
+        "displayName": "Pale Ochre",
+        "canonical": "#f1dc9a",
+        "tonalRamp": [
+          "#433509",
+          "#745c10",
+          "#a68317",
+          "#d7aa1e",
+          "#e6c14c",
+          "#eed482",
+          "#f5e6b7",
+          "#fcf7e9"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Brush Black",
+        "canonical": "#1c130e",
+        "tonalRamp": [
+          "#33231a",
+          "#583c2c",
+          "#7e553f",
+          "#a36f52",
+          "#bb8f77",
+          "#cfb1a0",
+          "#e4d2c9",
+          "#f6f1ee"
+        ]
+      },
+      "ink-soft": {
+        "role": "neutral",
+        "displayName": "Soft Soot",
+        "canonical": "#54443a",
+        "tonalRamp": [
+          "#2d251f",
+          "#4e3f36",
+          "#705a4d",
+          "#917564",
+          "#ac9586",
+          "#c5b5ab",
+          "#ded4cf",
+          "#f5f2f0"
+        ]
+      },
+      "plaster": {
+        "role": "neutral",
+        "displayName": "Lime Plaster",
+        "canonical": "#eeebe3",
+        "tonalRamp": [
+          "#302a1d",
+          "#534a32",
+          "#756947",
+          "#98885c",
+          "#b2a480",
+          "#c9c0a6",
+          "#e0dbcc",
+          "#f5f4ef"
+        ]
+      },
+      "plaster-deep": {
+        "role": "neutral",
+        "displayName": "Shaded Plaster",
+        "canonical": "#e2ddd1",
+        "tonalRamp": [
+          "#2f2a1e",
+          "#514833",
+          "#746749",
+          "#96865f",
+          "#b0a382",
+          "#c8bea7",
+          "#dfdacd",
+          "#f5f3ef"
+        ]
+      },
+      "lime": {
+        "role": "neutral",
+        "displayName": "Fresh Lime",
+        "canonical": "#f8f6f1",
+        "tonalRamp": [
+          "#332c1a",
+          "#584c2c",
+          "#7e6c3f",
+          "#a38c52",
+          "#bba877",
+          "#cfc2a0",
+          "#e4dcc9",
+          "#f6f4ee"
+        ]
+      },
+      "leaf": {
+        "role": "tertiary",
+        "displayName": "Green Earth",
+        "canonical": "#4e5a38",
+        "tonalRamp": [
+          "#292f1d",
+          "#475233",
+          "#657448",
+          "#83975e",
+          "#a0b181",
+          "#bcc8a7",
+          "#d9e0cd",
+          "#f3f5ef"
+        ]
+      },
+      "leaf-pale": {
+        "role": "tertiary",
+        "displayName": "Pale Green Earth",
+        "canonical": "#dfe3d2",
+        "tonalRamp": [
+          "#2b2f1d",
+          "#4a5233",
+          "#6a7448",
+          "#89975e",
+          "#a6b181",
+          "#c0c8a7",
+          "#dbe0cd",
+          "#f4f5ef"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "The Sinhala shop name in the hero register only."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Section titles on plaster and admin page titles."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Register-head category names, product names, station and panel titles."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Leads and story paragraphs, max 62ch."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Nav links, field labels, size headers."
+      },
+      "price": {
+        "displayName": "Price",
+        "purpose": "Every price, count and total; tabular lining figures."
+      }
+    },
+    "shadows": [
+      {
+        "name": "register-lift",
+        "value": "0 8px 16px -14px rgba(28,19,14,0.9)",
+        "purpose": "Sticky register heads."
+      },
+      {
+        "name": "float",
+        "value": "0 10px 30px -10px rgba(28,19,14,0.7)",
+        "purpose": "Bag bar, save bar, open mobile menu, hero inscription strip."
+      },
+      {
+        "name": "tile-hover",
+        "value": "0 18px 30px -18px rgba(28,19,14,0.55)",
+        "purpose": "Product tile hover with a 4px rise."
+      },
+      {
+        "name": "button-lip-vermilion",
+        "value": "0 1px 0 #7a1d12, 0 6px 16px -8px color-mix(in oklab, #7a1d12 70%, transparent)",
+        "purpose": "Primary button."
+      },
+      {
+        "name": "button-lip-ochre",
+        "value": "0 1px 0 #9a6d0b, 0 6px 16px -8px color-mix(in oklab, #1c130e 60%, transparent)",
+        "purpose": "Ochre button."
+      },
+      {
+        "name": "focus-on-dark",
+        "value": "outline: 2.5px solid #f8f6f1; box-shadow: 0 0 0 5px #1c130e",
+        "purpose": "Focus ring on vermilion and ink fields."
+      },
+      {
+        "name": "field-focus",
+        "value": "0 0 0 3px color-mix(in oklab, #d9a21b 55%, transparent)",
+        "purpose": "Field focus glow."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-settle",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Button press, tile lift, count bump."
+      },
+      {
+        "name": "bump",
+        "value": "420ms ease-settle, scale 1 to 1.18 to 1",
+        "purpose": "Bag count and bag bar on each add."
+      },
+      {
+        "name": "pigment-rise",
+        "value": "clip-path inset(100% 0 0 0) to inset(0); view() timeline, entry 15% to cover 40%",
+        "purpose": "Spice pigment fills its pack on scroll; only with view-timeline support and no reduced-motion preference."
+      },
+      {
+        "name": "state",
+        "value": "160ms",
+        "purpose": "Colour, border and shadow transitions on buttons and fields."
+      },
+      {
+        "name": "added-flash",
+        "value": "1600ms",
+        "purpose": "Price cell shows ochre Added state."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "sm",
+        "value": "640px"
+      },
+      {
+        "name": "md",
+        "value": "768px"
+      },
+      {
+        "name": "lg",
+        "value": "1024px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Default action: add to bag, place order, save.",
+      "html": "<button class=\"ds-btn-primary\">Add to bag · Rs 1,250</button>",
+      "css": ":host{--color-vermilion:#a3291b;--color-vermilion-deep:#7a1d12;--color-vermilion-bright:#c03a21;--color-ochre:#d9a21b;--color-ochre-deep:#9a6d0b;--color-ochre-pale:#f1dc9a;--color-ink:#1c130e;--color-ink-soft:#54443a;--color-plaster:#eeebe3;--color-plaster-deep:#e2ddd1;--color-lime:#f8f6f1;--color-leaf:#4e5a38;--color-leaf-pale:#dfe3d2;} .ds-btn-primary{display:inline-flex;align-items:center;justify-content:center;gap:0.55rem;min-height:3rem;padding:0.7rem 1.35rem;font-family:\"Hanken Grotesk\",sans-serif;font-weight:650;font-size:1rem;letter-spacing:0.005em;border-radius:2px;border:0;cursor:pointer;transition:background-color 160ms,color 160ms,box-shadow 200ms,transform 160ms cubic-bezier(0.16,1,0.3,1);background:var(--color-vermilion);color:var(--color-lime);box-shadow:0 1px 0 var(--color-vermilion-deep),0 6px 16px -8px color-mix(in oklab,var(--color-vermilion-deep) 70%,transparent);} .ds-btn-primary:hover{background:var(--color-vermilion-bright);} .ds-btn-primary:active{transform:translateY(1px);} .ds-btn-primary:focus-visible{outline:2.5px solid var(--color-ochre-deep);outline-offset:2px;}"
+    },
+    {
+      "name": "Ochre Button",
+      "kind": "button",
+      "refersTo": "button-ochre",
+      "description": "The hero route into the price list; ink-bordered ochre plaque.",
+      "html": "<div class=\"ds-ground\"><button class=\"ds-btn-ochre\">See the price list <svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M12 5v14\"/><path d=\"m19 12-7 7-7-7\"/></svg></button></div>",
+      "css": ":host{--color-vermilion:#a3291b;--color-vermilion-deep:#7a1d12;--color-vermilion-bright:#c03a21;--color-ochre:#d9a21b;--color-ochre-deep:#9a6d0b;--color-ochre-pale:#f1dc9a;--color-ink:#1c130e;--color-ink-soft:#54443a;--color-plaster:#eeebe3;--color-plaster-deep:#e2ddd1;--color-lime:#f8f6f1;--color-leaf:#4e5a38;--color-leaf-pale:#dfe3d2;} .ds-ground{background:var(--color-vermilion);padding:24px;} .ds-btn-ochre{display:inline-flex;align-items:center;justify-content:center;gap:0.55rem;min-height:3rem;padding:0.7rem 1.35rem;font-family:\"Hanken Grotesk\",sans-serif;font-weight:650;font-size:1rem;letter-spacing:0.005em;border-radius:2px;border:0;cursor:pointer;transition:background-color 160ms,color 160ms,box-shadow 200ms,transform 160ms cubic-bezier(0.16,1,0.3,1);background:var(--color-ochre);color:var(--color-ink);border:1.5px solid var(--color-ink);box-shadow:0 1px 0 var(--color-ochre-deep),0 6px 16px -8px color-mix(in oklab,var(--color-ink) 60%,transparent);} .ds-btn-ochre:hover{background:color-mix(in oklab,var(--color-ochre) 85%,var(--color-lime));} .ds-btn-ochre:active{transform:translateY(1px);} .ds-btn-ochre:focus-visible{outline:2.5px solid var(--color-lime);outline-offset:2px;box-shadow:0 0 0 5px var(--color-ink);}"
+    },
+    {
+      "name": "Line Button",
+      "kind": "button",
+      "refersTo": "button-line",
+      "description": "Secondary action on any ground; border in the current text colour.",
+      "html": "<button class=\"ds-btn-line\">Order on WhatsApp</button>",
+      "css": ":host{--color-vermilion:#a3291b;--color-vermilion-deep:#7a1d12;--color-vermilion-bright:#c03a21;--color-ochre:#d9a21b;--color-ochre-deep:#9a6d0b;--color-ochre-pale:#f1dc9a;--color-ink:#1c130e;--color-ink-soft:#54443a;--color-plaster:#eeebe3;--color-plaster-deep:#e2ddd1;--color-lime:#f8f6f1;--color-leaf:#4e5a38;--color-leaf-pale:#dfe3d2;} .ds-btn-line{display:inline-flex;align-items:center;justify-content:center;gap:0.55rem;min-height:3rem;padding:0.7rem 1.35rem;font-family:\"Hanken Grotesk\",sans-serif;font-weight:650;font-size:1rem;letter-spacing:0.005em;border-radius:2px;border:0;cursor:pointer;transition:background-color 160ms,color 160ms,box-shadow 200ms,transform 160ms cubic-bezier(0.16,1,0.3,1);background:transparent;color:var(--color-ink);border:1.5px solid currentColor;} .ds-btn-line:hover{background:color-mix(in oklab,currentColor 10%,transparent);} .ds-btn-line:focus-visible{outline:2.5px solid var(--color-ochre-deep);outline-offset:2px;}"
+    },
+    {
+      "name": "Field",
+      "kind": "input",
+      "refersTo": "field",
+      "description": "Lime text field with ink border and ochre focus glow.",
+      "html": "<label class=\"ds-label\">Phone number<input class=\"ds-field\" placeholder=\"07X XXX XXXX\"></label>",
+      "css": ":host{--color-vermilion:#a3291b;--color-vermilion-deep:#7a1d12;--color-vermilion-bright:#c03a21;--color-ochre:#d9a21b;--color-ochre-deep:#9a6d0b;--color-ochre-pale:#f1dc9a;--color-ink:#1c130e;--color-ink-soft:#54443a;--color-plaster:#eeebe3;--color-plaster-deep:#e2ddd1;--color-lime:#f8f6f1;--color-leaf:#4e5a38;--color-leaf-pale:#dfe3d2;} .ds-label{display:block;font-family:\"Hanken Grotesk\",sans-serif;font-weight:600;font-size:0.95rem;color:var(--color-ink);} .ds-field{display:block;margin-top:6px;width:100%;box-sizing:border-box;min-height:3rem;border:1.5px solid color-mix(in oklab,var(--color-ink) 28%,transparent);background:var(--color-lime);border-radius:2px;padding:0.7rem 0.85rem;font:inherit;font-weight:400;font-size:1rem;transition:border-color 160ms,box-shadow 160ms;} .ds-field:hover{border-color:color-mix(in oklab,var(--color-ink) 50%,transparent);} .ds-field:focus{outline:none;border-color:var(--color-ink);box-shadow:0 0 0 3px color-mix(in oklab,var(--color-ochre) 55%,transparent);}"
+    },
+    {
+      "name": "Price Register Row",
+      "kind": "custom",
+      "refersTo": "register-head",
+      "description": "Sticky vermilion register head with bead band, then a spice row of five tappable price cells.",
+      "html": "<div class=\"ds-reg\"><div class=\"ds-head\"><span class=\"ds-cat\">Curry Powders</span><span class=\"ds-sub\">තුනපහ</span></div><div class=\"ds-beads\"></div><div class=\"ds-row\"><span class=\"ds-name\">Roasted Curry Powder</span><div class=\"ds-cells\"><button class=\"ds-cell\">180</button><button class=\"ds-cell\">340</button><button class=\"ds-cell\">800</button><button class=\"ds-cell ds-added\">Added</button><button class=\"ds-cell\">3,000</button></div></div></div>",
+      "css": ":host{--color-vermilion:#a3291b;--color-vermilion-deep:#7a1d12;--color-vermilion-bright:#c03a21;--color-ochre:#d9a21b;--color-ochre-deep:#9a6d0b;--color-ochre-pale:#f1dc9a;--color-ink:#1c130e;--color-ink-soft:#54443a;--color-plaster:#eeebe3;--color-plaster-deep:#e2ddd1;--color-lime:#f8f6f1;--color-leaf:#4e5a38;--color-leaf-pale:#dfe3d2;} .ds-reg{background:var(--color-plaster);font-family:\"Hanken Grotesk\",sans-serif;color:var(--color-ink);} .ds-head{background:var(--color-vermilion);color:var(--color-lime);padding:12px 16px;display:flex;gap:12px;align-items:baseline;} .ds-cat{font-family:\"Gemunu Libre\",sans-serif;font-weight:700;font-size:1.9rem;line-height:1;} .ds-sub{color:var(--color-ochre-pale);font-weight:600;font-size:0.95rem;} .ds-beads{height:10px;background:var(--color-vermilion-deep) radial-gradient(circle,var(--color-ochre) 0 3px,var(--color-ink) 3px 4px,transparent 4px) 0 50%/16px 10px repeat-x;} .ds-row{display:grid;grid-template-columns:1fr min(30rem,60%);gap:16px;align-items:center;padding:16px;border-top:1px solid color-mix(in oklab,var(--color-ink) 15%,transparent);} .ds-name{font-family:\"Gemunu Libre\",sans-serif;font-weight:700;font-size:1.35rem;} .ds-cells{display:grid;grid-template-columns:repeat(5,1fr);gap:6px;} .ds-cell{min-height:3rem;border:0;border-radius:2px;background:var(--color-lime);box-shadow:0 0 0 1px color-mix(in oklab,var(--color-ink) 15%,transparent);font:inherit;font-weight:700;font-size:0.98rem;font-variant-numeric:tabular-nums lining-nums;cursor:pointer;transition:background-color 150ms,box-shadow 150ms,transform 150ms;} .ds-cell:hover{background:var(--color-ochre-pale);box-shadow:0 0 0 1px color-mix(in oklab,var(--color-ink) 40%,transparent);} .ds-cell:active{transform:translateY(1px);} .ds-cell:focus-visible{outline:2.5px solid var(--color-ochre-deep);outline-offset:2px;} .ds-added{background:var(--color-ochre);font-size:0.85rem;}"
+    },
+    {
+      "name": "Size Ladder Option",
+      "kind": "chip",
+      "refersTo": "size-option-active",
+      "description": "Product-page size choice; active tile is ochre with an ink border.",
+      "html": "<div class=\"ds-ladder\"><span class=\"ds-opt\">50g<b>180</b></span><span class=\"ds-opt ds-on\">100g<b>340</b></span><span class=\"ds-opt\">250g<b>800</b></span></div>",
+      "css": ":host{--color-vermilion:#a3291b;--color-vermilion-deep:#7a1d12;--color-vermilion-bright:#c03a21;--color-ochre:#d9a21b;--color-ochre-deep:#9a6d0b;--color-ochre-pale:#f1dc9a;--color-ink:#1c130e;--color-ink-soft:#54443a;--color-plaster:#eeebe3;--color-plaster-deep:#e2ddd1;--color-lime:#f8f6f1;--color-leaf:#4e5a38;--color-leaf-pale:#dfe3d2;} .ds-ladder{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;font-family:\"Hanken Grotesk\",sans-serif;color:var(--color-ink);} .ds-opt{display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:4.5rem;border:1.5px solid color-mix(in oklab,var(--color-ink) 20%,transparent);border-radius:2px;background:var(--color-lime);font-size:0.85rem;font-weight:600;cursor:pointer;transition:border-color 160ms,background-color 160ms;} .ds-opt b{font-size:1.02rem;font-variant-numeric:tabular-nums;} .ds-opt:hover{border-color:color-mix(in oklab,var(--color-ink) 60%,transparent);} .ds-on,.ds-on:hover{background:var(--color-ochre);border-color:var(--color-ink);}"
+    },
+    {
+      "name": "Storefront Header",
+      "kind": "nav",
+      "refersTo": "",
+      "description": "Sticky plaster bar with ink rule, bilingual wordmark, links and bag count.",
+      "html": "<header class=\"ds-hdr\"><span class=\"ds-wm\"><b>අපෙ අම්මගේ තුනපහ</b><small>Ape Ammage Thunapaha</small></span><nav class=\"ds-nav\"><a href=\"#\">Price list</a><a href=\"#\">Our story</a><a href=\"#\">සිංහල</a><a href=\"#\">Bag <i>3</i></a></nav></header>",
+      "css": ":host{--color-vermilion:#a3291b;--color-vermilion-deep:#7a1d12;--color-vermilion-bright:#c03a21;--color-ochre:#d9a21b;--color-ochre-deep:#9a6d0b;--color-ochre-pale:#f1dc9a;--color-ink:#1c130e;--color-ink-soft:#54443a;--color-plaster:#eeebe3;--color-plaster-deep:#e2ddd1;--color-lime:#f8f6f1;--color-leaf:#4e5a38;--color-leaf-pale:#dfe3d2;} .ds-hdr{display:flex;align-items:center;justify-content:space-between;height:64px;padding:0 16px;background:var(--color-plaster);border-bottom:1.5px solid var(--color-ink);font-family:\"Hanken Grotesk\",sans-serif;} .ds-wm{display:flex;flex-direction:column;line-height:1;} .ds-wm b{font-family:\"Gemunu Libre\",sans-serif;font-size:1.5rem;color:var(--color-vermilion);} .ds-wm small{font-size:0.7rem;font-weight:600;color:var(--color-ink-soft);} .ds-nav{display:flex;align-items:center;} .ds-nav a{display:inline-flex;align-items:center;gap:6px;min-height:44px;padding:0 12px;font-size:0.95rem;font-weight:500;color:var(--color-ink-soft);text-decoration:none;text-underline-offset:0.2em;} .ds-nav a:hover{color:var(--color-ink);text-decoration:underline;} .ds-nav a:focus-visible{outline:2.5px solid var(--color-ochre-deep);outline-offset:2px;} .ds-nav i{font-style:normal;display:grid;place-items:center;min-width:20px;height:20px;border-radius:999px;background:var(--color-ochre);color:var(--color-ink);font-size:0.72rem;font-weight:700;}"
+    },
+    {
+      "name": "Status Badge",
+      "kind": "chip",
+      "refersTo": "",
+      "description": "Admin order status labels.",
+      "html": "<span class=\"ds-b ds-new\">New</span> <span class=\"ds-b ds-conf\">Confirmed</span> <span class=\"ds-b ds-disp\">Dispatched</span> <span class=\"ds-b ds-canc\">Cancelled</span>",
+      "css": ":host{--color-vermilion:#a3291b;--color-vermilion-deep:#7a1d12;--color-vermilion-bright:#c03a21;--color-ochre:#d9a21b;--color-ochre-deep:#9a6d0b;--color-ochre-pale:#f1dc9a;--color-ink:#1c130e;--color-ink-soft:#54443a;--color-plaster:#eeebe3;--color-plaster-deep:#e2ddd1;--color-lime:#f8f6f1;--color-leaf:#4e5a38;--color-leaf-pale:#dfe3d2;} .ds-b{display:inline-flex;align-items:center;border-radius:2px;padding:2px 8px;font-family:\"Hanken Grotesk\",sans-serif;font-size:0.82rem;font-weight:700;} .ds-new{background:var(--color-ochre);color:var(--color-ink);} .ds-conf{background:var(--color-leaf-pale);color:var(--color-leaf);} .ds-disp{background:var(--color-ink);color:var(--color-lime);} .ds-canc{color:var(--color-vermilion);text-decoration:line-through;}"
+    }
+  ],
+  "narrative": {
+    "northStar": "Amma's Board, Painted on the Temple Wall",
+    "overview": "The whole storefront is one Kandyan mural read top to bottom. Each category is a horizontal register: a flat vermilion head, then rows of spices on lime plaster, each spice priced cell by cell exactly as Amma writes her board. Registers are separated by framed ornament bands (a brush-black rule, a liyawela vine or pala-peti petal or bead band, a fine rule), and ornament lives nowhere else. Every product is its own pigment field holding a pointed arch niche in which the spice is drawn in flat fills with a brush-black contour.\n\nThe world is flat paint, not photography and not glossy packaging. Depth comes from paint order (field, niche, contour), from brush-black outlines and from the bands that frame each register, with only soft ambient lift on things that float above the wall (sticky heads, the bag bar, hover). Density is that of a price board: many tappable prices visible at once, tabular figures, every price a 48px target. Sinhala and English sit side by side everywhere; Sinhala is never a translation tucked away.\n\nThe confirmed refusal from the direction: no dark-roast-and-gold hero over a photo grid. The admin surface lives in the same world in a restrained mode: plaster ground, ink rail, vermilion only for the active destination and the primary action.",
+    "keyCharacteristics": [
+      "Lime-plaster ground, vermilion register heads, yellow ochre for the active and the just-added, brush-black for every line.",
+      "Horizontal registers framed by ornament bands; ornament only between registers.",
+      "Pointed arch niche as the recurring vessel for spices and Amma's portrait.",
+      "Each spice carries its own pigment as a field (data-driven, not a fixed token).",
+      "Hairline 2px corners; ink rules at 1.5px and 3px.",
+      "Condensed Gemunu Libre display over Hanken Grotesk and Yaldevi text; tabular prices."
+    ],
+    "rules": [
+      {
+        "name": "The Pigment Field Rule",
+        "body": "Each spice's colour comes from its own `pigment` value and fills its pack face; it never becomes a UI colour (buttons, text, borders) and the UI palette never paints a pack face.",
+        "section": "colors"
+      },
+      {
+        "name": "The Ochre Means Chosen Rule",
+        "body": "Yellow ochre fill marks what is active, selected or just added (active size, added cell, count, selection). Do not use ochre fill as decoration inside fields; the ochre button and the Story register are its only large expanses.",
+        "section": "colors"
+      },
+      {
+        "name": "The Ring Swap Rule",
+        "body": "Focus is a 2.5px burnt-ochre outline at 2px offset on light grounds; on vermilion and ink fields it becomes a lime outline with a 5px ink halo.",
+        "section": "colors"
+      },
+      {
+        "name": "The Two Scripts Rule",
+        "body": "Every name is set in both scripts: the visitor's language as the display line, the other as a smaller secondary line in ink-soft (or ochre-pale on vermilion), each tagged with its `lang`. Sinhala text runs at line-height 1.7.",
+        "section": "typography"
+      },
+      {
+        "name": "The Tabular Price Rule",
+        "body": "Every number that is a price, count, quantity or phone number uses tabular lining figures. Prices on the board are bare numerals; the \"Rs\" appears in labels, totals and the \"from\" line.",
+        "section": "typography"
+      },
+      {
+        "name": "The Flat Wall Rule",
+        "body": "Anything painted on the wall (fields, niches, pack faces, rows) has no shadow. Only elements that stick, float or respond to hover lift.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "**Do** build every catalogue category as a register: vermilion head, bead band, then rows on plaster.",
+      "**Do** frame registers with a RegisterRule (3px ink, 26px ochre vine band with vermilion leaves, 1.5px ink) or a petal band, and keep ornament inside those bands.",
+      "**Do** seat spices and the portrait in the pointed arch niche; add the heavy contour and sill only where the arch stands in a register.",
+      "**Do** keep prices as tappable 48px cells with tabular figures in fixed size columns.",
+      "**Do** use ochre fill for the active, selected or just-added state.",
+      "**Do** swap the focus ring to lime with an ink halo on vermilion and ink grounds.",
+      "**Do** set names in both scripts, tagged with `lang`, with Sinhala at line-height 1.7.",
+      "**Do** honour reduced motion: the pigment rise only runs under no-preference and view-timeline support."
+    ],
+    "donts": [
+      "**Don't** build a dark-roast-and-gold hero over a photo grid.",
+      "**Don't** put ornament bands, vines or petals inside a field, a card or a pack face.",
+      "**Don't** use a spice's pigment as a UI colour, or tint a pack face from the UI palette.",
+      "**Don't** round corners beyond the 2px hairline except for counts and toggles.",
+      "**Don't** add shadows to anything painted on the wall; lift is for sticky, floating and hovered elements only.",
+      "**Don't** show a price in proportional figures or out of its size column."
+    ]
+  }
+}

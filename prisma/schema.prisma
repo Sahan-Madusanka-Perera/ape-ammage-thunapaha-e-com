@@ -1,0 +1,211 @@
+generator client {
+  provider = "prisma-client"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+enum OrderStatus {
+  NEW
+  CONFIRMED
+  DISPATCHED
+  DELIVERED
+  CANCELLED
+}
+
+enum PaymentMethod {
+  COD
+  BANK_TRANSFER
+  WHATSAPP
+}
+
+enum PaymentStatus {
+  UNPAID
+  SLIP_UPLOADED
+  PAID
+}
+
+/// Which line drawing a product's pack face carries when it has no photo.
+enum Motif {
+  CURRY
+  CHILLI
+  FLAKES
+  TURMERIC
+  PEPPER
+  SEED
+  CINNAMON
+  POD
+  LEAF
+  FRUIT
+}
+
+enum UploadKind {
+  PRODUCT
+  SLIP
+  PORTRAIT
+}
+
+model Category {
+  id        String    @id @default(cuid())
+  slug      String    @unique
+  nameEn    String
+  nameSi    String
+  blurbEn   String    @default("")
+  blurbSi   String    @default("")
+  sortOrder Int       @default(0)
+  products  Product[]
+}
+
+model Product {
+  id            String    @id @default(cuid())
+  slug          String    @unique
+  nameEn        String
+  nameSi        String
+  descriptionEn String    @default("")
+  descriptionSi String    @default("")
+  /// The spice's own colour, used as the pack-face field (hex, e.g. #C8371F).
+  pigment       String
+  motif         Motif
+  categoryId    String
+  category      Category  @relation(fields: [categoryId], references: [id])
+  imageId       String?
+  image         Upload?   @relation("ProductImage", fields: [imageId], references: [id], onDelete: SetNull)
+  isActive      Boolean   @default(true)
+  isFeatured    Boolean   @default(false)
+  sortOrder     Int       @default(0)
+  variants      Variant[]
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+
+  @@index([categoryId, sortOrder])
+}
+
+/// One size of a product. Prices are stored per size because larger packs carry a discount.
+model Variant {
+  id        String  @id @default(cuid())
+  productId String
+  product   Product @relation(fields: [productId], references: [id], onDelete: Cascade)
+  grams     Int
+  /// Whole rupees (LKR).
+  price     Int
+  inStock   Boolean @default(true)
+
+  @@unique([productId, grams])
+}
+
+model Order {
+  id             String        @id @default(cuid())
+  number         Int           @unique @default(autoincrement())
+  /// Unguessable token for the customer's order link.
+  publicToken    String        @unique
+  status         OrderStatus   @default(NEW)
+  paymentMethod  PaymentMethod
+  paymentStatus  PaymentStatus @default(UNPAID)
+  customerName   String
+  phone          String
+  email          String?
+  addressLine    String
+  city           String
+  district       String
+  notes          String?
+  locale         String        @default("en")
+  subtotal       Int
+  deliveryFee    Int
+  codFee         Int           @default(0)
+  total          Int
+  totalGrams     Int
+  slipId         String?       @unique
+  slip           Upload?       @relation("OrderSlip", fields: [slipId], references: [id], onDelete: SetNull)
+  trackingNumber String?
+  adminNote      String?
+  items          OrderItem[]
+  events         OrderEvent[]
+  createdAt      DateTime      @default(now())
+  updatedAt      DateTime      @updatedAt
+
+  @@index([status, createdAt])
+  @@index([phone])
+}
+
+/// A snapshot of what was bought, kept even if the product later changes.
+model OrderItem {
+  id        String  @id @default(cuid())
+  orderId   String
+  order     Order   @relation(fields: [orderId], references: [id], onDelete: Cascade)
+  productId String?
+  variantId String?
+  nameEn    String
+  nameSi    String
+  grams     Int
+  unitPrice Int
+  quantity  Int
+  lineTotal Int
+}
+
+model OrderEvent {
+  id        String       @id @default(cuid())
+  orderId   String
+  order     Order        @relation(fields: [orderId], references: [id], onDelete: Cascade)
+  status    OrderStatus?
+  note      String?
+  createdAt DateTime     @default(now())
+
+  @@index([orderId, createdAt])
+}
+
+/// Single row (id = 1) holding everything the owner can change without a developer.
+model Settings {
+  id                   Int      @id @default(1)
+  whatsappNumber       String
+  phone                String
+  email                String   @default("")
+  addressEn            String
+  addressSi            String
+  announcementEn       String   @default("")
+  announcementSi       String   @default("")
+  deliveryBaseFee      Int
+  deliveryPerExtraKg   Int
+  freeDeliveryOver     Int?
+  codEnabled           Boolean  @default(true)
+  codFee               Int      @default(0)
+  bankEnabled          Boolean  @default(true)
+  bankName             String   @default("")
+  bankBranch           String   @default("")
+  bankAccountName      String   @default("")
+  bankAccountNumber    String   @default("")
+  whatsappOrderEnabled Boolean  @default(true)
+  portraitId           String?
+  portrait             Upload?  @relation("Portrait", fields: [portraitId], references: [id], onDelete: SetNull)
+  updatedAt            DateTime @updatedAt
+}
+
+/// Optional per-district delivery charge that replaces the default rates.
+model DistrictFee {
+  district   String @id
+  baseFee    Int
+  perExtraKg Int
+}
+
+model AdminUser {
+  id           String   @id @default(cuid())
+  name         String
+  email        String   @unique
+  passwordHash String
+  createdAt    DateTime @default(now())
+}
+
+model Upload {
+  id        String     @id @default(cuid())
+  kind      UploadKind
+  mime      String
+  width     Int?
+  height    Int?
+  size      Int
+  data      Bytes
+  createdAt DateTime   @default(now())
+  products  Product[]  @relation("ProductImage")
+  order     Order?     @relation("OrderSlip")
+  settings  Settings[] @relation("Portrait")
+}
